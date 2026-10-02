@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — EasyBid</title>
+<meta name="description" content="EasyBid support. Offline iPhone estimator for contractor labour and materials. No account and no cloud sync.">
+<style>
+  :root {
+    --bg: #0B0B12;
+    --fg: #FFFFFF;
+    --muted: rgba(255,255,255,0.6);
+    --accent: #FF2E63;
+    --accent-2: #6A5AE0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    line-height: 1.7;
+  }
+  .aurora {
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(circle at 20% 0%, rgba(106,90,224,0.20), transparent 50%),
+      radial-gradient(circle at 80% 0%, rgba(255,46,99,0.15), transparent 50%);
+    z-index: -1;
+    filter: blur(60px);
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  .nav {
+    margin-bottom: 32px;
+  }
+  .nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .nav a:hover { color: var(--fg); }
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .lead {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 32px 0 12px;
+  }
+  p {
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 12px;
+  }
+  a { color: var(--accent-2); }
+  .faq {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 12px 0;
+  }
+  .faq summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+  }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::before {
+    content: "▸";
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.2s;
+    color: var(--accent);
+  }
+  .faq[open] summary::before { transform: rotate(90deg); }
+  .faq p {
+    margin-top: 12px;
+    color: var(--muted);
+  }
+  .contact {
+    margin-top: 60px;
+    text-align: center;
+    padding: 32px;
+    background: linear-gradient(135deg, rgba(106,90,224,0.15), rgba(255,46,99,0.10));
+    border-radius: 20px;
+  }
+  .contact a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 40px 0 20px;
+    margin-top: 48px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a {
+    color: var(--fg);
+    text-decoration: none;
+    margin: 0 12px;
+  }
+  footer a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="aurora"></div>
+<div class="container">
+  <nav class="nav">
+    <a href="index.html">← Back to EasyBid</a>
+  </nav>
+
+  <h1>Support</h1>
+  <p class="lead">Short answers about EasyBid.</p>
+
+  <h2>Frequently Asked Questions</h2>
+
+  <details class="faq">
+    <summary>What is EasyBid?</summary>
+    <p>EasyBid is an offline iPhone estimator for contractor labour and materials.</p>
+  </details>
+
+  <details class="faq">
+    <summary>Where do estimates, companies, rates, and materials stay?</summary>
+    <p>They stay on the phone.</p>
+  </details>
+
+  <details class="faq">
+    <summary>Does EasyBid use cloud sync?</summary>
+    <p>No. EasyBid does not use cloud sync.</p>
+  </details>
+
+  <details class="faq">
+    <summary>Does EasyBid use an account?</summary>
+    <p>No. EasyBid does not use an account.</p>
+  </details>
+
+  <details class="faq">
+    <summary>Which devices can run EasyBid?</summary>
+    <p>iPhone only. EasyBid requires iOS 17.</p>
+  </details>
+
+  <div class="contact">
+    <p>Contact</p>
+    <a href="mailto:wendynator@hotmail.com?subject=EasyBid%20Support">Email support</a>
+  </div>
+
+  <footer>
+    <p>
+      <a href="index.html">EasyBid</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:wendynator@hotmail.com">Contact</a>
+    </p>
+    <p style="margin-top:16px; font-size:13px;">© 2026 EasyBid</p>
+  </footer>
+</div>
+</body>
+</html>

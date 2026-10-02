@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EasyBid — Offline contractor estimator</title>
+<meta name="description" content="EasyBid is an offline iPhone estimator for contractor labour and materials. Estimates, companies, rates, and materials stay on the phone.">
+<style>
+  :root {
+    --bg: #0B0B12;
+    --fg: #FFFFFF;
+    --muted: rgba(255,255,255,0.6);
+    --accent: #FF2E63;
+    --accent-2: #6A5AE0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  .aurora {
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(106,90,224,0.35), transparent 50%),
+      radial-gradient(circle at 80% 30%, rgba(255,46,99,0.30), transparent 50%),
+      radial-gradient(circle at 50% 80%, rgba(20,184,166,0.25), transparent 50%);
+    z-index: -1;
+    filter: blur(60px);
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px 60px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .logo {
+    width: 96px; height: 96px;
+    margin: 0 auto 20px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    box-shadow: 0 20px 60px rgba(255,46,99,0.4);
+  }
+  h1 {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, #fff, rgba(255,255,255,0.7));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .tagline {
+    font-size: 18px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  .cta {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    color: #fff;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: transform 0.2s;
+  }
+  .cta:hover { transform: translateY(-2px); }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 60px 0;
+  }
+  .feat {
+    padding: 24px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    backdrop-filter: blur(20px);
+  }
+  .feat-title { font-weight: 700; margin-bottom: 4px; }
+  .feat-desc { font-size: 14px; color: var(--muted); }
+  footer {
+    text-align: center;
+    padding: 40px 0 20px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: var(--muted);
+    font-size: 14px;
+  }
+  footer a {
+    color: var(--fg);
+    text-decoration: none;
+    margin: 0 12px;
+  }
+  footer a:hover { color: var(--accent); }
+  @media (max-width: 600px) {
+    h1 { font-size: 36px; }
+    .features { grid-template-columns: 1fr; }
+    .container { padding: 60px 20px 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="aurora"></div>
+<div class="container">
+  <header>
+    <div class="logo">EB</div>
+    <h1>EasyBid</h1>
+    <p class="tagline">Offline iPhone estimator for contractor labour and materials.</p>
+    <p class="tagline">iPhone only. Requires iOS 17.</p>
+    <a class="cta" href="#">App Store</a>
+  </header>
+
+  <section class="features">
+    <div class="feat">
+      <div class="feat-title">Offline estimator</div>
+      <div class="feat-desc">Offline iPhone estimator for contractor labour and materials.</div>
+    </div>
+    <div class="feat">
+      <div class="feat-title">On the phone</div>
+      <div class="feat-desc">Estimates, companies, rates, and materials stay on the phone.</div>
+    </div>
+    <div class="feat">
+      <div class="feat-title">No cloud sync</div>
+      <div class="feat-desc">EasyBid does not use cloud sync.</div>
+    </div>
+    <div class="feat">
+      <div class="feat-title">No account</div>
+      <div class="feat-desc">EasyBid does not use an account.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      <a href="index.html">EasyBid</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:wendynator@hotmail.com">Contact</a>
+    </p>
+    <p style="margin-top:16px; font-size:13px;">© 2026 EasyBid</p>
+  </footer>
+</div>
+</body>
+</html>
